@@ -16,6 +16,7 @@ Remove-NetRoute -InterfaceAlias $nicname -AddressFamily IPv4 -Confirm:$false
 New-NetIPAddress -InterfaceAlias $nicname -IPAddress $ipaddress -AddressFamily IPv4 -PrefixLength $prefixlength -DefaultGateway $gateway
 
 # Set the DNS address to ourselves
+#DNS address 127.0.1.1
 Set-DnsClientServerAddress -InterfaceAlias $nicname -ServerAddresses $ipaddress
 
 # Make sure the timezone is set correctly

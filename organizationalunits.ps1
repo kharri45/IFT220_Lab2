@@ -2,7 +2,7 @@
 
 # you need to change "DC=ad,DC=sparky-tech,DC=com" to match your domain and update the ST initials to match or remove them
 
-Write-Host -ForegroundColor yellow "Creating OUs"
+Write-Host -ForegroundColor yellow "Creating organizationalunits"
 New-ADOrganizationalUnit -Name ST_Computers -Path "DC=AD,DC=sparky-tech,DC=com" -Description "ST Computers"
  New-ADOrganizationalUnit -Name Workstations -Path "OU=ST_Computers,DC=AD,DC=sparky-tech,DC=com"
   New-ADOrganizationalUnit -Name President -Path "OU=Workstations,OU=ST_Computers,DC=AD,DC=sparky-tech,DC=com"
@@ -17,7 +17,7 @@ New-ADOrganizationalUnit -Name ST_Computers -Path "DC=AD,DC=sparky-tech,DC=com" 
 New-ADOrganizationalUnit -Name ST_Groups -Path "DC=AD,DC=sparky-tech,DC=com" -Description "High Level Security Groups"
 New-ADOrganizationalUnit -Name ST_Privileged_Accounts -Path "DC=AD,DC=sparky-tech,DC=com" -Description "Privileged Accounts"
 New-ADOrganizationalUnit -Name ST_Users -Path "DC=AD,DC=sparky-tech,DC=com" -Description "Non-Privileged Accounts"
-Write-Host -ForegroundColor yellow "Done creating OUs"
+Write-Host -ForegroundColor yellow "Done creating organizationalunits"
 Write-Host -ForegroundColor yellow ""
 
 Write-Host -ForegroundColor yellow "Creating groups based on department"
