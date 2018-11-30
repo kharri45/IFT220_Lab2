@@ -3,7 +3,7 @@
 # you need to change "DC=ad,DC=sparky-tech,DC=com" to match your domain and update the ST initials to match or remove them
 
 Write-Host -ForegroundColor yellow "Creating organizationalunits"
-New-ADOrganizationalUnit -Name ST_Computers -Path "DC=ad,DC=kharri45,DC=lan" -Description "KH Computers"
+New-ADOrganizationalUnit -Name KH_Computers -Path "DC=ad,DC=kharri45,DC=lan" -Description "KH Computers"
  New-ADOrganizationalUnit -Name Workstations -Path "OU=KH_Computers,DC=ad,DC=kharri45,DC=lan"
   New-ADOrganizationalUnit -Name President -Path "OU=Workstations,OU=KH_Computers,DC=ad,DC=kharri45,DC=lan"
   New-ADOrganizationalUnit -Name Finance -Path "OU=Workstations,OU=KH_Computers,DC=ad,DC=kharri45,DC=lan"
