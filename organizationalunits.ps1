@@ -28,6 +28,6 @@ New-ADGroup -GroupCategory Security -GroupScope Global -Name Sales -Path "OU=ST_
 New-ADGroup -GroupCategory Security -GroupScope Global -Name Legal -Path "OU=ST_Groups,DC=ad,DC=sparky-tech,DC=com"
 New-ADGroup -GroupCategory Security -GroupScope Global -Name IT -Path "OU=ST_Groups,DC=ad,DC=sparky-tech,DC=com"
 # Create a Leadership group for the President and VPs to access restricted a file share
-New-ADGroup -GroupCategory Security -GroupScope Global -Name Leadership -Path "OU=KH_Groups,DC=ad,DC=sparky-tech,DC=com"
+New-ADGroup -GroupCategory Security -GroupScope Global -Name Leadership -Path "OU=ST_Groups,DC=ad,DC=sparky-tech,DC=com"
 Write-Host -ForegroundColor yellow "Done creating groups"
 Write-Host -ForegroundColor yellow ""
