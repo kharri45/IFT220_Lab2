@@ -15,7 +15,7 @@ New-ADOrganizationalUnit -Name ST_Computers -Path "DC=ad,DC=kharri45,DC=lan" -De
   New-ADOrganizationalUnit -Name Hyper-V -Path "OU=Servers,OU=ST_Computers,DC=ad,DC=kharri45,DC=lan"
   New-ADOrganizationalUnit -Name Exchange -Path "OU=Servers,OU=ST_Computers,DC=ad,DC=kharri45,DC=lan"
 New-ADOrganizationalUnit -Name ST_Groups -Path "DC=ad,DC=kharri45,DC=lan" -Description "High Level Security Groups"
-New-ADOrganizationalUnit -Name ST_Privileged_Accounts -Path "DC=ad,DC=skharri45,DC=lan" -Description "Privileged Accounts"
+New-ADOrganizationalUnit -Name ST_Privileged_Accounts -Path "DC=ad,DC=kharri45,DC=lan" -Description "Privileged Accounts"
 New-ADOrganizationalUnit -Name ST_Users -Path "DC=ad,DC=kharri45,DC=lan" -Description "Non-Privileged Accounts"
 Write-Host -ForegroundColor yellow "Done creating organizationalunits"
 Write-Host -ForegroundColor yellow ""
